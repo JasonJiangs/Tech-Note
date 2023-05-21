@@ -1,5 +1,7 @@
 # Table of contents
 
-* [Untitled](README.md)
-* [Page w](page-w.md)
-* [Page 2w](page-2w.md)
+* [Notes and Blogs](README.md)
+* [Computational Biology](computational-biology/README.md)
+  * [RNA-seq](computational-biology/rna-seq.md)
+  * [ChIP-seq](computational-biology/chip-seq.md)
+* [Machine Learning](machine-learning.md)
