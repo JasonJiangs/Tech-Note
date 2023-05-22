@@ -1,7 +1,0 @@
-# Machine Learning
-
-#### sssss
-
-
-
-## sssss
