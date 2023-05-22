@@ -1,0 +1,27 @@
+{
+  "name": "tech-note",
+  "version": "1.0.0",
+  "description": "---\r description: >-\r   It is a playground for me to share my experiences on my research and\r   engineering works.\r ---",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-gh-pages": "^0.5.4",
+    "gulp-load-plugins": "^2.0.8"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JasonJiangs/Tech-Note.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JasonJiangs/Tech-Note/issues"
+  },
+  "homepage": "https://github.com/JasonJiangs/Tech-Note#readme",
+  "serve": "gitbook serve",
+  "publish": "node_modules/.bin/gulp publish"
+}
