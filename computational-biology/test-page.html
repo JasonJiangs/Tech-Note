@@ -1,0 +1,655 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Test Page · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../machine-learning.html" />
+    
+    
+    <link rel="prev" href="chip-seq.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Notes and Blogs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Computational Biology
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="rna-seq.html">
+            
+                <a href="rna-seq.html">
+            
+                    
+                    RNA-seq
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="chip-seq.html">
+            
+                <a href="chip-seq.html">
+            
+                    
+                    ChIP-seq
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.3" data-path="test-page.html">
+            
+                <a href="test-page.html">
+            
+                    
+                    Test Page
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../machine-learning.html">
+            
+                <a href="../machine-learning.html">
+            
+                    
+                    Machine Learning
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../deep-learning.html">
+            
+                <a href="../deep-learning.html">
+            
+                    
+                    Deep Learning
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../software-engineering.html">
+            
+                <a href="../software-engineering.html">
+            
+                    
+                    Software Engineering
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Test Page</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="test-page">Test Page</h1>
+<div>
+
+<img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/373d2201-6ff3-4440-8485-de94aeb4cfa6/Untitled.png" alt="Untitled">
+
+
+
+<figure><img src="../.gitbook/assets/Untitled.png" alt=""><figcaption></figcaption></figure>
+
+</div>
+
+<p>In general, based on the multiqc result, which integrates will the other fastqc results together to generate a summary. We can see that the quality check mostly fails at <code>Per Base Sequence Content</code>, <code>Per Sequence GC Content</code>, <code>Sequence Duplication Levels</code>, and <code>Overrepresented Sequence</code>. Although there are failed cases in the results, we do not decide to perform pre-process in this case, since the decision should be guided by the context of specific experiment and the nature of the data.</p>
+<p>In our cases, the context is using RNA-seq to do differential expression analysis and ChIP-seq to explore an unknown transcription factor. So</p>
+<p>Quality of sequence reads. You can use a general QC package called &#x201C;fastqc&#x201D; to help you check different reads quality measurement.</p>
+<pre><code class="lang-bash"><span class="hljs-comment"># before</span>
+fastqc <span class="hljs-_">-f</span> fastq -o /home/pfq7pm/<span class="hljs-built_in">test</span>_proj/result/fastqc/ /nv/vol190/zanglab/shared/StudentTestData/rawdata_LNCaP_AR/*.fastq.gz
+<span class="hljs-comment"># after</span>
+fastqc <span class="hljs-_">-f</span> bam -o /scratch/pfq7pm/<span class="hljs-built_in">test</span>_proj/fastqc_after/ /scratch/pfq7pm/<span class="hljs-built_in">test</span>_proj/bowtie2/*.bam
+fastqc <span class="hljs-_">-f</span> bam -o /scratch/pfq7pm/<span class="hljs-built_in">test</span>_proj/fastqc_after/ /scratch/pfq7pm/<span class="hljs-built_in">test</span>_proj/hisat2/*.bam
+</code></pre>
+<p><a href="https://www.notion.so/fastqc-Result-Analysis-49638c14da1a48f8878d3c456fbdcceb" target="_blank">fastqc Result Analysis</a></p>
+<p><a href="https://www.notion.so/fastqc-analysis-after-alignment-54c715e15d7a4946bafaf3ecebbebac2" target="_blank">fastqc analysis after alignment</a></p>
+<h4 id="2-mapping">2. Mapping</h4>
+<p>Mappability (percentage of sequence reads that can be mapped to the corresponding genome) of both RNA-seq and ChIP-seq data. Such information is available in the output of the mapping software (bowtie2 for ChIP-seq and hisat2 for RNA-seq)</p>
+<p>To extract the mappability information from the output, use the <strong><code>samtools flagstat</code></strong> command on the resulting SAM file. This command will generate a summary report of the alignment statistics.</p>
+<pre><code class="lang-bash"><span class="hljs-meta">#!/bin/bash</span>
+<span class="hljs-comment">#SBATCH --job-name=samtools</span>
+<span class="hljs-comment">#SBATCH --cpus-per-task=16</span>
+<span class="hljs-comment">#SBATCH --partition=standard</span>
+<span class="hljs-comment">#SBATCH --time=72:00:00</span>
+<span class="hljs-comment">#SBATCH -A zanglab</span>
+<span class="hljs-comment">#SBATCH --output=&quot;/home/pfq7pm/test_proj/log/slurm_log/**flagstat**.out&quot;</span>
+<span class="hljs-comment">#SBATCH --mem=64G</span>
+
+module load gcc/9.2.0
+module load samtools
+
+<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> LNCaP_DHT_RNA_rep1 LNCaP_DHT_RNA_rep2 LNCaP_Veh_RNA_rep1 LNCaP_Veh_RNA_rep2
+<span class="hljs-keyword">do</span>
+samtools flagstat /scratch/pfq7pm/<span class="hljs-built_in">test</span>_proj/hisat2/<span class="hljs-string">&quot;<span class="hljs-variable">$i</span>&quot;</span>_batch.sam
+<span class="hljs-keyword">done</span>
+
+<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> LNCaP_DHT_AR_1 LNCaP_DHT_AR_2 LNCaP_Veh_AR_1 LNCaP_Veh_AR_2
+<span class="hljs-keyword">do</span>
+samtools flagstat /scratch/pfq7pm/<span class="hljs-built_in">test</span>_proj/bowtie2/<span class="hljs-string">&quot;<span class="hljs-variable">$i</span>&quot;</span>.sam
+<span class="hljs-keyword">done</span>
+</code></pre>
+<p><a href="https://www.notion.so/Output-for-Samtools-flagstat-15bf55733bbd4299ad3537a942da5625" target="_blank">Output for Samtools flagstat</a></p>
+<p>By order <code>mapped rate</code> / <code>properly pared rate</code> / <code>singletons rate</code>:</p>
+<ol>
+<li>LNCaP_DHT_RNA_rep1: 96.14% / 90.90% / 2.82%</li>
+<li>LNCaP_DHT_RNA_rep2: 96.14% / 90.72% / 2.96%</li>
+<li>LNCaP_Veh_RNA_rep1: 95.85% / 90.00% / 3.17%</li>
+<li>LNCaP_Veh_RNA_rep2: 96.03% / 90.53% / 2.92%</li>
+<li>LNCaP_DHT_AR_1: 86.67% / NA / NA</li>
+<li>LNCaP_DHT_AR_2: 78.08% / NA / NA</li>
+<li>LNCaP_Veh_AR_1: 88.54% / NA / NA</li>
+<li>LNCaP_Veh_AR_2: 88.95% / NA / NA</li>
+</ol>
+<p><strong>Check Log of Hisat2 for RNA-seq data:</strong></p>
+<p><strong>In order of</strong> LNCaP_DHT_RNA_rep1 LNCaP_DHT_RNA_rep2 LNCaP_Veh_RNA_rep1 LNCaP_Veh_RNA_rep2</p>
+<pre><code>Time loading forward index: 00:00:17
+Time loading reference: 00:00:02
+Multiseed full-index search: 00:37:09
+190669387 reads; of these:
+  190669387 (100.00%) were paired; of these:
+    17348542 (9.10%) aligned concordantly 0 times
+    145862611 (76.50%) aligned concordantly exactly 1 time
+    27458234 (14.40%) aligned concordantly &gt;1 times
+    ----
+    17348542 pairs aligned concordantly 0 times; of these:
+      940160 (5.42%) aligned discordantly 1 time
+    ----
+    16408382 pairs aligned 0 times concordantly or discordantly; of these:
+      32816764 mates make up the pairs; of these:
+        19244958 (58.64%) aligned 0 times
+        10900759 (33.22%) aligned exactly 1 time
+        2671047 (8.14%) aligned &gt;1 times
+94.95% overall alignment rate
+Time searching: 00:37:12
+Overall time: 00:37:31
+Time loading forward index: 00:00:03
+Time loading reference: 00:00:01
+Multiseed full-index search: 00:33:58
+186962133 reads; of these:
+  186962133 (100.00%) were paired; of these:
+    17341035 (9.28%) aligned concordantly 0 times
+    144137299 (77.09%) aligned concordantly exactly 1 time
+    25483799 (13.63%) aligned concordantly &gt;1 times
+    ----
+    17341035 pairs aligned concordantly 0 times; of these:
+      921762 (5.32%) aligned discordantly 1 time
+    ----
+    16419273 pairs aligned 0 times concordantly or discordantly; of these:
+      32838546 mates make up the pairs; of these:
+        18940173 (57.68%) aligned 0 times
+        11161265 (33.99%) aligned exactly 1 time
+        2737108 (8.34%) aligned &gt;1 times
+94.93% overall alignment rate
+Time searching: 00:34:00
+Overall time: 00:34:03
+Time loading forward index: 00:00:04
+Time loading reference: 00:00:00
+Multiseed full-index search: 00:33:35
+175175817 reads; of these:
+  175175817 (100.00%) were paired; of these:
+    17509310 (10.00%) aligned concordantly 0 times
+    130857051 (74.70%) aligned concordantly exactly 1 time
+    26809456 (15.30%) aligned concordantly &gt;1 times
+    ----
+    17509310 pairs aligned concordantly 0 times; of these:
+      884661 (5.05%) aligned discordantly 1 time
+    ----
+    16624649 pairs aligned 0 times concordantly or discordantly; of these:
+      33249298 mates make up the pairs; of these:
+        19265626 (57.94%) aligned 0 times
+        10977090 (33.01%) aligned exactly 1 time
+        3006582 (9.04%) aligned &gt;1 times
+94.50% overall alignment rate
+Time searching: 00:33:36
+Overall time: 00:33:40
+Time loading forward index: 00:00:03
+Time loading reference: 00:00:01
+Multiseed full-index search: 00:29:56
+179684279 reads; of these:
+  179684279 (100.00%) were paired; of these:
+    17009142 (9.47%) aligned concordantly 0 times
+    136308009 (75.86%) aligned concordantly exactly 1 time
+    26367128 (14.67%) aligned concordantly &gt;1 times
+    ----
+    17009142 pairs aligned concordantly 0 times; of these:
+      907204 (5.33%) aligned discordantly 1 time
+    ----
+    16101938 pairs aligned 0 times concordantly or discordantly; of these:
+      32203876 mates make up the pairs; of these:
+        18809388 (58.41%) aligned 0 times
+        10528399 (32.69%) aligned exactly 1 time
+        2866089 (8.90%) aligned &gt;1 times
+94.77% overall alignment rate
+Time searching: 00:29:58
+Overall time: 00:30:01
+</code></pre><p>The alignment rate for each:</p>
+<ol>
+<li>LNCaP_DHT_RNA_rep1: 94.95%</li>
+<li>LNCaP_DHT_RNA_rep2: 94.93%</li>
+<li>LNCaP_Veh_RNA_rep1: 94.50%</li>
+<li>LNCaP_Veh_RNA_rep2: 94.77%</li>
+</ol>
+<p><strong>Check Log of Bowtie2 for ChIP-seq data:</strong></p>
+<pre><code>52644155 reads; of these:
+  52644155 (100.00%) were unpaired; of these:
+    7015750 (13.33%) aligned 0 times
+    31021896 (58.93%) aligned exactly 1 time
+    14606509 (27.75%) aligned &gt;1 times
+86.67% overall alignment rate
+50161537 reads; of these:
+  50161537 (100.00%) were unpaired; of these:
+    10997425 (21.92%) aligned 0 times
+    26652956 (53.13%) aligned exactly 1 time
+    12511156 (24.94%) aligned &gt;1 times
+78.08% overall alignment rate
+46205142 reads; of these:
+  46205142 (100.00%) were unpaired; of these:
+    5296219 (11.46%) aligned 0 times
+    27746572 (60.05%) aligned exactly 1 time
+    13162351 (28.49%) aligned &gt;1 times
+88.54% overall alignment rate
+47745017 reads; of these:
+  47745017 (100.00%) were unpaired; of these:
+    5274770 (11.05%) aligned 0 times
+    28739080 (60.19%) aligned exactly 1 time
+    13731167 (28.76%) aligned &gt;1 times
+88.95% overall alignment rate
+</code></pre><p>The alignment rate of each:</p>
+<ol>
+<li>LNCaP_DHT_AR_1: 86.67%</li>
+<li>LNCaP_DHT_AR_2: 78.08%</li>
+<li>LNCaP_Veh_AR_1: 88.54%</li>
+<li>LNCaP_Veh_AR_2: 88.95%</li>
+</ol>
+<p>Comparison between<code>samtools flagstat</code> and <code>Hisat2 / Bowtie2</code> , the mapping rates are different in RNA-seq data, possible reasons:</p>
+<ol>
+<li><strong>Differences in how they classify and count reads:</strong> Hisat2&apos;s reported alignment rate includes both reads that mapped uniquely and those that mapped to multiple locations. <strong><code>samtools flagstat</code></strong>, on the other hand, also provides statistics on secondary alignments and supplementary alignments. These are alignments for reads that have multiple primary alignment records.</li>
+<li><strong>Filtering of alignments:</strong> Hisat2&apos;s reported alignment rate may consider all alignments found, including those that were of low quality or that didn&apos;t meet certain thresholds set during the alignment process. <strong><code>samtools flagstat</code></strong> works on the output BAM file, which may have had low-quality alignments or certain types of alignments filtered out.</li>
+<li><strong>Handling of paired-end data:</strong> Hisat2 and <strong><code>samtools flagstat</code></strong> may handle paired-end reads differently, especially in the case of orphan reads (where one read of a pair aligns and the other doesn&apos;t) or improperly paired reads.</li>
+</ol>
+<h4 id="3-replicate-correlation">3. Replicate correlation</h4>
+<p>Replicate correlation (reproducibility). Replicate correlation is one of the most important QC measurements. You are required to design different measurements to check this for RNA-seq and ChIP-seq data (for example, expression correlation for RNA-seq and peak overlap for ChIP-seq).</p>
+<p><strong>Check for RNA-seq (Replicate correlation), do gene and transcript sample respectively (gene_count_matrix / transcript_count_matrix):</strong></p>
+<ol>
+<li><p>Use R to generate correlation coefficient between each part of replicates. Do normalization and take Spearman correlation (rank-based measures) as an example.</p>
+<p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/8eb58759-01eb-45a5-b9d8-91e0c3754679/Untitled.png" alt="Untitled"></p>
+<p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5f76a46c-80ec-4287-aa07-efc935e6c6ee/Untitled.png" alt="Untitled"></p>
+</li>
+<li><p>Visualization the Correlation with <code>heatmap()</code> and <code>pheatmap()</code>.</p>
+<p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a081d4ca-402f-42de-b685-06956298a8d9/Untitled.png" alt="Untitled"></p>
+<p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/165e6c07-f099-42e8-b258-1da391fafba3/Untitled.png" alt="Untitled"></p>
+</li>
+</ol>
+<p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4e226697-df78-4cbd-9259-7bb88299004c/Untitled.png" alt="Untitled"></p>
+<p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d56d1f10-6641-4957-9ee1-d613c5e731f0/Untitled.png" alt="Untitled"></p>
+<ol>
+<li><p>Create a scatter plot for each pair of replicates to visualize the correlation with <code>ggplot2</code>.</p>
+<p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4b597ff0-66d7-4c47-a43e-2fb6105759d2/Untitled.png" alt="Untitled"></p>
+<p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/e6fe6ed4-90b8-4be7-99ac-45d97f1478e3/Untitled.png" alt="Untitled"></p>
+</li>
+</ol>
+<p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c842be65-5854-4253-9cd5-de3da322e58e/Untitled.png" alt="Untitled"></p>
+<p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d98f395e-74ce-4298-bb5d-2e2ef813e16d/Untitled.png" alt="Untitled"></p>
+<blockquote>
+<p>Between gene_count_matrix and transcript_count_matrix:</p>
+<ol>
+<li><strong>Gene Count Matrix</strong>: In a gene count matrix, the rows represent genes, and the values in the matrix represent the number of sequencing reads that have been mapped to each gene. This gives an overall picture of the expression level of each gene, but it doesn&apos;t provide information about the expression of individual transcripts (also called isoforms) that may be produced from each gene.</li>
+<li><strong>Transcript Count Matrix</strong>: In a transcript count matrix, the rows represent individual transcripts rather than whole genes. This allows for the examination of alternative splicing events, since it can show the expression level of each individual transcript that is produced from a gene. Therefore, a transcript count matrix provides a more detailed view of gene expression, at the cost of being more complex to analyze.</li>
+</ol>
+<p>When performing replicate correlation analysis as described above, we are measuring the similarity in expression patterns between different samples (typically biological replicates) in RNA-seq data. This can give several valuable pieces of information:</p>
+<ol>
+<li><strong>Quality Control</strong>: If the replicates of the same condition are not highly correlated, it may indicate a problem with the experiment or the sequencing. For example, there could have been a technical error, or the biological samples might not actually be as similar as assumed.</li>
+<li><strong>Reproducibility</strong>: High correlation between replicates indicates that your results are reproducible. This is important for ensuring the validity of your findings.</li>
+<li><strong>Expression Patterns</strong>: By examining the correlation between different conditions (rather than replicates), you can gain insight into the similarities and differences in gene expression patterns between those conditions.</li>
+</ol>
+</blockquote>
+<p><strong>Check for ChIP-seq Data (Peak overlap and correlation of Peak Intensity)</strong></p>
+<ol>
+<li><p><strong>Peak overlap</strong>: The overlap of detected peaks between replicates can be used to measure reproducibility. Overlaps can be quantified using the Jaccard index or other set similarity metrics.</p>
+<ol>
+<li><strong>Call Peak:</strong> Using MACS2 to identify regions of the genome that have been enriched in ChIP-seq experiment. The BED files in the output contains the genomic coordinates of each peak.</li>
+<li><strong>Identify overlapping peaks</strong>: <code>bedtool intersect</code> allows to find overlapping regions between two sets of genomic coordinates. For example, find peaks that are represent in both replicate 1 and replicate 2.</li>
+</ol>
+<pre><code class="lang-bash">bedtools intersect <span class="hljs-_">-a</span> replicate1_peaks.bed -b replicate2_peaks.bed -wa &gt; overlapping_peaks.bed
+</code></pre>
+<p>The &quot;-wa&quot; flag tells Bedtools to write the original entry in file A (specified by &quot;-a&quot;) for each overlap with B. Without this flag, Bedtools intersect will only output the portions of the entries in A that overlap with B.</p>
+<p>So, if you have a region in file A (replicate1_peaks.bed) that partially overlaps with a region in file B (replicate2_peaks.bed), using the &quot;-wa&quot; flag will result in the output of the entire original region from file A, not just the overlapping portion.</p>
+<p>In other words, &quot;-wa&quot; ensures that the whole peak from the &quot;-a&quot; file is written to the output when an overlap with a peak in the &quot;-b&quot; file is detected. This can be helpful in understanding the complete genomic region of interest from file A that is also present in file B.</p>
+<p>c. <strong>Quantify Overlap</strong>: Once the set of overlapping peaks are found, we can calculate the Jaccard Coefficient with bedtools.</p>
+<p>$$ J(A,B) = \frac{|A \cap B|}{|A \cup B|} $$</p>
+<pre><code class="lang-bash">-bash-4.2<span class="hljs-variable">$bedtools</span> jaccard <span class="hljs-_">-a</span> LNCaP_DHT_AR_1_PK_summits.bed -b LNCaP_DHT_AR_2_PK_summits.bed 
+intersection   union     jaccard    n_intersections
+    89         18678    0.00476496      89
+
+intersection   union     jaccard    n_intersections
+  1166839     2371753    0.491973       5400
+</code></pre>
+<p>The jaccard index is approximately 0.0048, which is quite low and suggest that there is very little overlap between peak sets from the two replicates.</p>
+<blockquote>
+<p><strong>Issue</strong>: the calculated jaccard coefficient should be approaching to 1 to suggest that the replicates are similar, which means they have a large overlap of peaks. However, the results are extremely low. The result indicates several possibilities: 1. High biological or technical variability between replicates; 2. low quality of one or both datasets; 3. inappropriate peak calling parameters. <strong>Solution</strong>: The potential problem is that lots of false positive cases are recorded in the multiple hypothesis testing that MACS2 performs to call peaks. So, a lower q-value means a stricter threshold, which will result in fewer peaks being called, but with higher confidence. Make an adjustment to a lower q = 0.01 instead of the default value 0.05.</p>
+<p>intersection union jaccard n_intersections 74 14567 0.00507998 74</p>
+<p>Still unsolve the problem, we then switch to use narrowPeak file for the calculation.</p>
+<p>The <strong><code>NAME_summits.bed</code></strong> and <strong><code>NAME_peaks.narrowPeak</code></strong> files contain slightly different information about the peaks called by MACS2.</p>
+<ol>
+<li><strong><code>NAME_summits.bed</code></strong>: This file contains the precise location of the peak summits, which are the single base pair positions within each peak region that have the highest pileup of reads. This file will only contain one summit per peak region, even if the region contains multiple local maxima.</li>
+<li><strong><code>NAME_peaks.narrowPeak</code></strong>: This file contains broader peak regions, which are the areas around the peak summits that have a significant pileup of reads. Each entry in this file represents a contiguous region of the genome where the read pileup is above the threshold determined by MACS2.</li>
+</ol>
+<p>The discrepancy in the Jaccard index between these two files could be due to the differences in their contents.</p>
+<p>The <strong><code>NAME_summits.bed</code></strong> file represents the very highest-confidence points within each peak, so there will be fewer entries in this file compared to the <strong><code>NAME_peaks.narrowPeak</code></strong> file. If the peak summits in the two replicates are not exactly aligned, which can often be the case due to the inherent variability and noise in ChIP-seq data, the Jaccard index calculated from the <strong><code>NAME_summits.bed</code></strong> files might be low.</p>
+<p>On the other hand, the <strong><code>NAME_peaks.narrowPeak</code></strong> file contains broader regions that have a significant pileup of reads, so there is more opportunity for overlap between the replicates, which can result in a higher Jaccard index.</p>
+<p>Therefore, it&apos;s not uncommon to see a higher Jaccard index when using <strong><code>NAME_peaks.narrowPeak</code></strong> files compared to <strong><code>NAME_summits.bed</code></strong> files.</p>
+<p>intersection union jaccard n_intersections 1166839 2371753 0.491973 5400 In this case, it is a pretty high Jaccard coefficient value which refers a good identical characteristics between replicates. This means that about 49.2% of the total regions identified in the two replicates overlap, suggesting a substantial agreement between the two datasets. Although there isn&apos;t a universally accepted threshold for a &quot;good&quot; Jaccard Index in this context, a higher value generally indicates better reproducibility. Given that the index ranges from 0 (no overlap) to 1 (complete overlap), a value of 0.492 can be considered relatively good, indicating that the peak sets from your two replicates are largely consistent with each other.</p>
+</blockquote>
+</li>
+<li><p><strong>Correlation of Peak Intensities</strong>: Similar to expression correlation in RNA-seq, you can calculate the correlation of peak intensities between replicates.</p>
+<p>Pearson Correlation: 0.846<code>LNCaP_DHT_AR_2_PK_summits.bed</code></p>
+<p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4ade7541-e186-4789-976d-ea8b9e2de5dc/Untitled.png" alt="Untitled"></p>
+<p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b4e8f227-3274-49d2-88ac-e81b66e0ba68/Untitled.png" alt="Untitled"></p>
+<p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/eae0c329-f413-4369-b06c-a33a8b2f7d55/Untitled.png" alt="Untitled"></p>
+</li>
+</ol>
+<h4 id="4-duplicate-rate-in-chip-seq">4. Duplicate rate in ChIP-seq</h4>
+<p>Find this information in your macs2 output and try to understand what this measurement can tell us.</p>
+<p>In this case, using Python to operate on the BED files, and both duplicate rate is 0%.</p>
+<blockquote>
+<p>Understanding the duplicate rate can provide insights into the quality of your ChIP-seq experiment. Low duplicate rates suggest good library complexity, meaning there is a wide variety of different DNA fragments in your sample, which is generally a good thing. High duplicate rates could indicate over-amplification during PCR or a low amount of starting material, which might limit the number of different DNA fragments that can be sequenced. This could potentially lead to biased results in downstream analyses. However, it&apos;s worth noting that some level of duplicates in ChIP-seq data is expected due to the nature of protein-DNA interactions and the way ChIP-seq works.</p>
+</blockquote>
+<h4 id="5-other-qc-measurements">5. Other QC measurements</h4>
+<p>Other potential QC measurement you think is important for this study.</p>
+<p><strong>For RNA-seq:</strong></p>
+<ol>
+<li><strong>Then we use PCA to reduce the dimensionality of the data and to visualize the variation between samples. (use <code>gene_fpkm_matrix</code>)</strong></li>
+<li><p>reduce the dimension to 4x2</p>
+<p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/e2e89f61-e4ba-4ebc-8615-088474f0320c/Untitled.png" alt="Untitled"></p>
+</li>
+<li><p>use log2 transformation to standardize the data.</p>
+<p><a href="https://www.biostars.org/p/242573/" target="_blank">Why gene expression data should be log2 transformed?</a></p>
+<ol>
+<li><strong>Variance Stabilization</strong>: Gene expression data often have a property where the variance increases with the mean. That is, highly expressed genes have a greater absolute variability than lowly expressed genes. Log transformation can help stabilize this variance across the range of values.</li>
+<li><strong>Normalizing Distribution</strong>: Many statistical techniques assume that the data follow a Gaussian (or &quot;normal&quot;) distribution. While gene expression data are typically not normally distributed, the log transformation can make their distribution more symmetric and closer to a Gaussian distribution.</li>
+<li><strong>Scaling Down Large Values</strong>: Log transformation reduces the impact of very large expression values that can disproportionately affect downstream analyses, especially those involving Euclidean distances (like hierarchical clustering or PCA).</li>
+<li><strong>Interpretability</strong>: Log2-transformed values are easier to interpret. For example, a doubling of expression corresponds to an increase of 1 in log2 scale, a quadrupling corresponds to an increase of 2, and so on.</li>
+<li><strong>Comparing Expression Levels</strong>: When comparing expression levels across samples, raw counts can be misleading due to differences in sequencing depth, RNA composition, etc. Log transformation (usually after some form of normalization) can make these comparisons more meaningful.</li>
+</ol>
+</li>
+<li><p>then get the visualization</p>
+<p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/88cf2ff9-13e2-49e7-8a41-52742d886052/Untitled.png" alt="Untitled"></p>
+</li>
+<li><p>find the bottom 10 genes loadings and top 10 genes loadings: from the figure shown above, we can see:</p>
+</li>
+<li><p><strong><code>LNCaP_DHT_RNA_rep1_batch</code></strong> and <strong><code>LNCaP_DHT_RNA_rep2_batch</code></strong> samples have positive values for PC1. This indicates that these two samples, which are both treated with DHT, are similar to each other in terms of gene expression profiles and are different from the Vehicle-treated samples.</p>
+</li>
+<li><strong><code>LNCaP_Veh_RNA_rep1_batch</code></strong> and <strong><code>LNCaP_Veh_RNA_rep2_batch</code></strong> samples have negative values for PC1. This means that these two samples, which are both Vehicle-treated, are similar to each other and are different from the DHT-treated samples.</li>
+<li><p>However, when take a look at PC2, we can see that take the negative of LNCaP_Veh_RNA_rep1_batch is almost equal to LNCaP_Veh_RNA_rep2_batch. To gain more insight into what&apos;s driving the variation along PC2, we could look at the loadings of PC2 (the weights used to calculate PC2 from the original variables), see which genes have the highest loadings, and check whether these genes have any biological functions or pathways in common. This might give we some clues about what&apos;s causing the symmetric pattern along PC2.</p>
+<p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/71667de2-f1bc-453e-841d-0c5af5580191/Untitled.png" alt="Untitled"></p>
+<p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/503af5f5-3fdd-43bd-bc6f-74dc50d6a466/Untitled.png" alt="Untitled"></p>
+</li>
+<li><p><strong>Clustering: by using clustering algorithms (heirarchical clustering and K-means) to group genes or samples based on their expression patterns, which can be visualized as a heat map.</strong></p>
+</li>
+</ol>
+<blockquote>
+<p><strong>Issues in Clustering</strong> stack overflow: reduce the size of data by filtering out lowly expressed genes by:</p>
+</blockquote>
+<pre><code class="lang-python">df = pd.read_csv(<span class="hljs-string">&apos;../data/rnaseq/gene_fpkm_matrix.csv&apos;</span>, index_col=<span class="hljs-number">0</span>)
+<span class="hljs-comment"># Log transform data</span>
+df_log2 = np.log2(df + <span class="hljs-number">1</span>)
+<span class="hljs-comment"># filter out lowly expressed genes</span>
+<span class="hljs-comment"># Calculate average expression level for each gene</span>
+average_expression = df_log2.mean(axis=<span class="hljs-number">1</span>)
+<span class="hljs-comment"># Set threshold</span>
+threshold = <span class="hljs-number">6</span>
+<span class="hljs-comment"># Remove lowly expressed genes</span>
+df_filtered = df_log2[average_expression &gt; threshold]
+</code></pre>
+<p><strong>For ChIP-seq</strong></p>
+<ol>
+<li><strong>Irreproducible Discovery Rate (IDR)</strong>: IDR is a specific measure developed for assessing reproducibility in high-throughput experiments like ChIP-seq. It assesses the consistency of rank orders of peaks between replicates.</li>
+<li><p><strong>Consensus Peak Sets</strong>: Create a consensus set of peaks from multiple replicates and then check the percentage of consensus peaks that are found in each individual replicate.</p>
+<p>For example, if you have 3 replicates, <strong><code>len(replicate_data) // 2 + 1</code></strong> would be <strong><code>3 // 2 + 1 = 1 + 1 = 2</code></strong>. This means that a peak must be present in at least 2 of the 3 replicates to be included in the consensus set.</p>
+<p>If you have 4 replicates, <strong><code>len(replicate_data) // 2 + 1</code></strong> would be <strong><code>4 // 2 + 1 = 2 + 1 = 3</code></strong>. So a peak must be present in at least 3 of the 4 replicates to be included in the consensus set.</p>
+<p><strong>Result</strong>: of course 100% for both of the replicates since there are only two.</p>
+</li>
+</ol>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="chip-seq.html" class="navigation navigation-prev " aria-label="Previous page: ChIP-seq">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../machine-learning.html" class="navigation navigation-next " aria-label="Next page: Machine Learning">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Test Page","level":"1.2.3","depth":2,"next":{"title":"Machine Learning","level":"1.3","depth":1,"path":"machine-learning.md","ref":"machine-learning.md","articles":[]},"previous":{"title":"ChIP-seq","level":"1.2.2","depth":2,"path":"computational-biology/chip-seq.md","ref":"computational-biology/chip-seq.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"computational-biology/test-page.md","mtime":"2023-05-22T20:07:32.081Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-05-22T20:08:28.499Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
